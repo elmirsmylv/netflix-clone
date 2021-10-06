@@ -1,0 +1,168 @@
+@import "../../styles/variables.scss";
+
+.header {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  z-index: 1;
+  @media only screen and(min-width:564px) {
+    height: 100vh;
+  }
+  .nav {
+    display: flex;
+    padding-top: 1.25rem;
+    margin-inline: 1.25rem;
+    .logo {
+      width: 88px;
+      margin-right: auto;
+      @media only screen and(min-width:564px) {
+        width: 108px;
+      }
+      @media only screen and(min-width:972px) {
+        width: 133px;
+      }
+    }
+    .nav_right {
+      display: flex;
+      align-items: center;
+      .select {
+        border: 1px #fff solid;
+        border-radius: 2px;
+        font-size: 15px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-inline: 6px;
+        padding-block: 3px;
+
+        @media only screen and(min-width:564px) {
+          padding-inline: 10px;
+          padding-block: 6px;
+        }
+      }
+      .button {
+        border: none;
+        border-radius: 2px;
+        background-color: $brand-color;
+        color: #fff;
+        font-weight: 400;
+        padding-block: 5px;
+        margin-left: 10px;
+
+        @media only screen and(min-width:564px) {
+          padding-inline: 16px;
+          padding-block: 9px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: contain;
+    padding-inline: 1.3rem;
+
+    .img_wrapper {
+      .background_img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        object-fit: cover;
+      }
+      .img_gradient {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8) 0,
+          rgba(0, 0, 0, 0) 60%,
+          rgba(0, 0, 0, 1) 100%
+        );
+      }
+    }
+
+    .body {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 9rem;
+      text-align: center;
+      z-index: 10;
+      h1 {
+        margin-bottom: 0;
+        font-size: 1.75rem;
+        max-width: 518px;
+
+        @media only screen and(min-width:564px) {
+          font-size: 50px;
+        }
+      }
+      h3,
+      span {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      h3 {
+        @media only screen and(min-width:564px) {
+          font-size: 26px;
+        }
+      }
+
+      .input_section {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        input {
+          width: 100%;
+          max-width: 500px;
+          padding: 10px;
+
+          @media only screen and(min-width:564px) {
+            padding: 19px;
+            font-size: 1.1rem;
+          }
+        }
+
+        button {
+          width: 50%;
+          max-width: 131px;
+          margin-top: 1rem;
+          border: none;
+          padding-block: 10px;
+          border-radius: 3px;
+          background-color: $brand-color;
+          color: #fff;
+          font-size: 1rem;
+        }
+
+        @media only screen and(min-width:970px) {
+          flex-direction: row;
+
+          button {
+            margin-top: 0;
+            padding-block: 20.5px;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
