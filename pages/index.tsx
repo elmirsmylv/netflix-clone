@@ -1,9 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Faq from "../components/FAQ/Faq";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import Section1 from "../components/Section1/Section1";
-import Section3 from "../components/Section3/Section3";
+import Section1 from "../components/Sections/Section1";
+import Section2 from "../components/Sections/Section2";
+import Section3 from "../components/Sections/Section3";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -16,18 +19,12 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <Section1
-        title="Enjoy on your TV."
-        description="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
-        photo="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
-        video="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
-      />
-      <Section3
-        title="Watch everywhere."
-        description="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more."
-        photo="	https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
-        video="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
-      />
+      <Section1 />
+      <Section2 photoUrl="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" />
+      <Section3 />
+      <Section2 photoUrl="https://occ-0-3467-3466.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABdFTpLmANuJpYneLq8L5m7CunMCi8e8Nl4y7xaPVWzG3IeoDoq17egTQAthApKg_4sdRWdwuR8KadWu1frjL3JQImpwq.png?r=fcd" />
+      <Faq />
+      <Footer />
     </div>
   );
 };

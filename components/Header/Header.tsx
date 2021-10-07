@@ -39,7 +39,12 @@ const Header = () => {
             membership.
           </span>
           <div className={styles.input_section}>
-            <input type="text" placeholder="Email address" />
+            <input
+              type="text"
+              required
+              autoComplete="off"
+              placeholder="Email address"
+            />
             <button>Get Started</button>
           </div>
         </div>

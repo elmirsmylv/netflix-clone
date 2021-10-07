@@ -1,0 +1,97 @@
+@import "../../styles/variables.scss";
+
+.divider {
+  height: 7px;
+  width: 100%;
+  background-color: #222222;
+}
+
+.container {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5rem;
+
+  h1 {
+    margin-top: 3rem;
+    font-size: 26px;
+    width: 60%;
+    text-align: center;
+
+    @media only screen and(min-width:550px) {
+      font-size: 40px;
+      width: 100%;
+    }
+    @media only screen and(min-width:950px) {
+      font-size: 50px;
+    }
+  }
+
+  .faq_list {
+    width: 100%;
+    max-width: 1270px;
+  }
+
+  .section_bottom {
+    padding-inline: 1rem;
+
+    h5 {
+      text-align: center;
+      font-size: 18px;
+
+      @media only screen and(min-width:740px) {
+        font-size: 23px;
+      }
+
+      @media only screen and(min-width:950px) {
+        font-size: 19px;
+      }
+    }
+
+    .input_section {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      input {
+        width: 100%;
+        max-width: 500px;
+        padding: 12px;
+        outline: none;
+
+        @media only screen and(min-width:564px) {
+          padding: 19px;
+          font-size: 1.1rem;
+        }
+      }
+
+      button {
+        width: 50%;
+        max-width: 131px;
+        margin-top: 1rem;
+        border: none;
+        padding-block: 10px;
+        border-radius: 3px;
+        background-color: $brand-color;
+        color: #fff;
+        font-size: 1rem;
+      }
+
+      @media only screen and(min-width:970px) {
+        flex-direction: row;
+
+        button {
+          margin-top: 0;
+          padding-block: 20.5px;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,9 @@
+.divider {
+  height: 7px;
+  width: 100%;
+  background-color: #222222;
+}
+
 .container {
   width: 100%;
   color: #fff;
@@ -6,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   padding-inline: 1rem;
+  padding-bottom: 3rem;
 
   @media only screen and(min-width:950px) {
     justify-content: center;
@@ -33,7 +40,7 @@
       }
     }
     @media only screen and(min-width:950px) {
-      max-width: 547px;
+      max-width: 40%;
       h1 {
         font-size: 50px;
         text-align: left;
@@ -44,7 +51,7 @@
       }
     }
   }
-  .animation_container {
+  .section1_animation_container {
     position: relative;
     z-index: 2;
     max-width: 524px;
@@ -61,6 +68,40 @@
         width: 84%;
         height: 100%;
       }
+    }
+  }
+
+  .section3_animation_container {
+    position: relative;
+    z-index: 2;
+    max-width: 524px;
+    margin-top: 3rem;
+    img {
+      width: 100%;
+    }
+    .card_video {
+      position: absolute;
+      top: 12%;
+      left: 20%;
+      z-index: -1;
+
+      video {
+        width: 75%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.section2_container {
+  @media only screen and(min-width:950px) {
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .section2_animation_container {
+    img {
+      width: 90%;
     }
   }
 }
