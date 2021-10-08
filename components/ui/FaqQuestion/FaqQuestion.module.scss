@@ -1,5 +1,6 @@
 .list_item {
   margin-bottom: 0.7rem;
+  cursor: pointer;
   @media only screen and(min-width:550px) {
     width: 80%;
     margin-inline: auto;
