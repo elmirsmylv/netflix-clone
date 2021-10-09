@@ -76,7 +76,39 @@ const login: NextPage = () => {
         </div>
       </div>
       <div className={styles.divider}></div>
-      <div className={styles.footer}></div>
+      <div className={styles.footer}>
+        <div className={styles.content}>
+          <h4>Questions? Contact us.</h4>
+          <div className={styles.links}>
+            <div className={styles.link_item}>
+              <a href="#">FAQ</a>
+            </div>
+            <div className={styles.link_item}>
+              <a href="#">Help Center</a>
+            </div>
+            <div className={styles.link_item}>
+              <a href="#">Terms of Use</a>
+            </div>
+            <div className={styles.link_item}>
+              <a href="#">Privacy</a>
+            </div>
+            <div className={styles.link_item}>
+              <a href="#">Cookie Preferences</a>
+            </div>
+            <div className={styles.link_item}>
+              <a href="#">Corporate Information</a>
+            </div>
+          </div>
+          <div className={styles.select_section}>
+            <select id="lang-switcher" className={styles.select}>
+              <option value="en" selected>
+                English
+              </option>
+              <option value="ru">Russian</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
