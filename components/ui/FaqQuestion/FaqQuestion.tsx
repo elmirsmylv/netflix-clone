@@ -7,17 +7,19 @@ interface FaqQuestionProps {
   id: number;
   question: string;
   answer: string;
+  key: number;
 }
 
-const FaqQuestion: React.FC<FaqQuestionProps> = ({ id, question, answer }) => {
+const FaqQuestion: React.FC<FaqQuestionProps> = ({
+  id,
+  question,
+  answer,
+  key,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div
-      key={id}
-      className={styles.list_item}
-      onClick={() => setIsOpen(!isOpen)}
-    >
+    <div className={styles.list_item} onClick={() => setIsOpen(!isOpen)}>
       <div className={styles.question}>
         <h3>{question}</h3>
         {isOpen ? <AiOutlineClose size={24} /> : <AiOutlinePlus size={24} />}

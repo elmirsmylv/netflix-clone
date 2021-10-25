@@ -17,6 +17,7 @@ const Faq = () => {
           {FAQ &&
             FAQ.map((item) => (
               <FaqQuestion
+                key={item.id}
                 id={item.id}
                 question={item.question}
                 answer={item.answer}

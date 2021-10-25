@@ -6,7 +6,7 @@
   min-height: 500px;
   z-index: 1;
   @media only screen and(min-width:564px) {
-    height: 100vh;
+    height: 90vh;
   }
   .nav {
     display: flex;
@@ -48,6 +48,7 @@
         font-weight: 400;
         padding-block: 5px;
         margin-left: 10px;
+        cursor: pointer;
 
         @media only screen and(min-width:564px) {
           padding-inline: 16px;
@@ -92,6 +93,15 @@
           rgba(0, 0, 0, 0) 60%,
           rgba(0, 0, 0, 1) 100%
         );
+
+        @media only screen and(min-width:750px) {
+          background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.9) 0,
+            rgba(0, 0, 0, 0.3) 60%,
+            rgba(0, 0, 0, 1) 100%
+          );
+        }
       }
     }
 
@@ -110,6 +120,10 @@
 
         @media only screen and(min-width:564px) {
           font-size: 50px;
+        }
+        @media only screen and(min-width:1500px) {
+          font-size: 64px;
+          max-width: 718px;
         }
       }
       h3,

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import styles from "./Header.module.scss";
 import background from "../../public/background.jpg";
@@ -19,7 +20,9 @@ const Header = () => {
             </option>
             <option value="ru">Russian</option>
           </select>
-          <button className={styles.button}>Sign In</button>
+          <a href="/login-or-register" className={styles.button}>
+            Sign In
+          </a>
         </div>
       </nav>
       <div className={styles.content}>
