@@ -14,6 +14,7 @@ import "firebase/auth";
 import { ImSpinner2 } from "react-icons/im";
 
 import styles from "../styles/login-or-register.module.scss";
+import {NextRouter} from "next/dist/client/router";
 
 type Creds = {
   email: string;
@@ -25,7 +26,7 @@ const emptyCreds: Creds = {
   password: "",
 };
 
-const login: NextPage = () => {
+const Login: NextPage = () => {
   const [user, loading] = useAuthState(firebaseClient.auth());
 
   const router = useRouter();
@@ -240,4 +241,4 @@ const login: NextPage = () => {
   );
 };
 
-export default login;
+export default Login;
